@@ -1,0 +1,17 @@
+{
+    "description": "Response JSON schema for UserController update",
+    "type": "object",
+    "properties": {
+        "password": {
+            "type": "string",
+            "pattern": "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9]{8,}$"
+        },
+        "role": {
+            "type": "string"
+        },
+        "userForUpdateId": {
+            "type": "integer"
+        }
+    },
+    "required": [ "password", "role", "userForUpdateId"]
+}

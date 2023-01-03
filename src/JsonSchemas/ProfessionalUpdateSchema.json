@@ -1,0 +1,28 @@
+{
+    "description": "Response JSON schema for ProfessionalController update",
+    "type": "object",
+    "properties": {
+        "professional_id": {
+            "type": "integer"
+        },
+        "firstname": {
+            "type": "string",
+            "minLength": 2,
+            "maxLength": 60
+        },
+        "lastname": {
+            "type": "string",
+            "minLength": 2,
+            "maxLength": 60
+        },
+        "email": {
+            "type": "string",
+            "format": "email"
+        },
+        "contact": {
+            "type": ["string", "null"],
+            "maxLength": 15
+        }
+    },
+    "required": [ "professional_id", "firstname", "lastname", "email"]
+}

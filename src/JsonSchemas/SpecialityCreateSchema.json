@@ -1,0 +1,12 @@
+{
+    "description": "Response JSON schema for SpecialityController create",
+    "type": "object",
+    "properties": {
+        "spec_name": {
+            "type": "string",
+            "minLength": 2,
+            "maxLength": 180
+        }
+    },
+    "required": [ "spec_name" ]
+}

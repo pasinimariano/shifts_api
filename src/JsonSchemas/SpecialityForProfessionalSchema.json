@@ -1,0 +1,13 @@
+{
+    "description": "Response JSON schema for ProfessionalController create speciality",
+    "type": "object",
+    "properties": {
+        "professional_id": {
+            "type": "integer"
+        },
+        "spec_id": {
+            "type": "integer"
+        }
+    },
+    "required": [ "professional_id", "spec_id" ]
+}

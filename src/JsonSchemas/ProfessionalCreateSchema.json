@@ -1,0 +1,25 @@
+{
+    "description": "Response JSON schema for ProfessionalController create",
+    "type": "object",
+    "properties": {
+        "firstname": {
+            "type": "string",
+            "minLength": 2,
+            "maxLength": 60
+        },
+        "lastname": {
+            "type": "string",
+            "minLength": 2,
+            "maxLength": 60
+        },
+        "email": {
+            "type": "string",
+            "format": "email"
+        },
+        "contact": {
+            "type": ["string", "null"],
+            "maxLength": 15
+        }
+    },
+    "required": [ "firstname", "lastname", "email"]
+}
